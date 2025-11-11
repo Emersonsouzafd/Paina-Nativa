@@ -1214,6 +1214,260 @@
         .notification.warning {
             background: var(--warning);
         }
+
+        /* Novos estilos para funcionalidades adicionadas */
+        
+        /* Sistema de Comentários */
+        .comments-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .comment-form {
+            margin-bottom: 2rem;
+        }
+
+        .comment {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent);
+        }
+
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .comment-author {
+            font-weight: 600;
+            color: var(--accent-gold);
+        }
+
+        .comment-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .comment-rating {
+            margin-bottom: 0.5rem;
+        }
+
+        .star {
+            color: var(--accent-gold);
+        }
+
+        .comment-images {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .comment-image {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius);
+            object-fit: cover;
+        }
+
+        /* Galeria de Produtos */
+        .product-gallery {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-main-image {
+            flex: 1;
+            height: 400px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .product-main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100px;
+        }
+
+        .product-thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .product-thumbnail.active {
+            opacity: 1;
+            border: 2px solid var(--accent-gold);
+        }
+
+        .product-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Controle de Estoque */
+        .stock-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stock-badge {
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .stock-low {
+            background: var(--danger);
+        }
+
+        .stock-medium {
+            background: var(--warning);
+        }
+
+        .stock-high {
+            background: var(--success);
+        }
+
+        /* Vendedores */
+        .seller-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+        }
+
+        .seller-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .seller-info {
+            flex: 1;
+        }
+
+        .seller-name {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .seller-stats {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Upload de Imagens */
+        .upload-area {
+            border: 2px dashed rgba(212, 175, 55, 0.3);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            border-color: var(--accent);
+            background: rgba(139, 90, 43, 0.1);
+        }
+
+        .upload-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .upload-item {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .upload-item img, .upload-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .upload-remove {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: var(--danger);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        /* Relatórios */
+        .report-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .report-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .report-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .report-chart {
+            height: 200px;
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -1275,6 +1529,13 @@
         
         <div class="products-grid" id="products-grid">
             <!-- Produtos serão carregados dinamicamente -->
+        </div>
+    </section>
+
+    <!-- Detalhes do Produto -->
+    <section class="container" id="product-details-section" style="display: none;">
+        <div id="product-details-content">
+            <!-- Conteúdo será carregado dinamicamente -->
         </div>
     </section>
 
@@ -1423,6 +1684,12 @@
             <button class="admin-tab" onclick="openAdminTab('orders')">
                 <i class="fas fa-shopping-bag"></i> Pedidos
             </button>
+            <button class="admin-tab" onclick="openAdminTab('sellers')">
+                <i class="fas fa-user-tie"></i> Vendedores
+            </button>
+            <button class="admin-tab" onclick="openAdminTab('reports')">
+                <i class="fas fa-chart-bar"></i> Relatórios
+            </button>
             <button class="admin-tab" onclick="openAdminTab('messages')">
                 <i class="fas fa-envelope"></i> Mensagens
             </button>
@@ -1520,6 +1787,60 @@
             </div>
         </div>
         
+        <!-- Vendedores -->
+        <div class="admin-content" id="sellers">
+            <h3>Gerenciar Vendedores</h3>
+            <button class="btn btn-primary" onclick="openSellerModal()">
+                <i class="fas fa-plus"></i> Adicionar Vendedor
+            </button>
+            
+            <div class="seller-list" id="admin-seller-list">
+                <!-- Lista de vendedores será carregada aqui -->
+            </div>
+        </div>
+        
+        <!-- Relatórios -->
+        <div class="admin-content" id="reports">
+            <h3>Relatórios e Estatísticas</h3>
+            <div class="reports-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="report-card">
+                    <div class="report-header">
+                        <h4>Vendas do Mês</h4>
+                        <span class="report-value" id="monthly-sales">R$ 0,00</span>
+                    </div>
+                    <div class="report-chart" id="sales-chart"></div>
+                </div>
+                
+                <div class="report-card">
+                    <div class="report-header">
+                        <h4>Produtos Mais Vendidos</h4>
+                    </div>
+                    <div id="top-products">
+                        <!-- Produtos mais vendidos serão carregados aqui -->
+                    </div>
+                </div>
+                
+                <div class="report-card">
+                    <div class="report-header">
+                        <h4>Estoque Baixo</h4>
+                    </div>
+                    <div id="low-stock">
+                        <!-- Produtos com estoque baixo serão carregados aqui -->
+                    </div>
+                </div>
+                
+                <div class="report-card">
+                    <div class="report-header">
+                        <h4>Clientes Novos</h4>
+                        <span class="report-value" id="new-customers">0</span>
+                    </div>
+                    <div id="customer-growth">
+                        <!-- Gráfico de crescimento de clientes será carregado aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Mensagens -->
         <div class="admin-content" id="messages">
             <h3>Configurações de Mensagens</h3>
@@ -1602,15 +1923,69 @@
                     <input type="number" id="product-discount" class="form-control" min="0" max="100" value="0">
                 </div>
                 <div class="form-group">
-                    <label for="product-image">URL da Imagem</label>
-                    <input type="text" id="product-image" class="form-control" placeholder="URL da imagem do produto">
-                    <small>Use o Cloudinary para upload de imagens</small>
+                    <label for="product-stock">Estoque</label>
+                    <input type="number" id="product-stock" class="form-control" min="0" value="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-min-stock">Estoque Mínimo</label>
+                    <input type="number" id="product-min-stock" class="form-control" min="0" value="5" required>
+                </div>
+                <div class="form-group full-width">
+                    <label>Imagens do Produto (Máx. 5)</label>
+                    <div class="upload-area" id="image-upload-area">
+                        <i class="fas fa-cloud-upload-alt" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <p>Arraste imagens aqui ou clique para selecionar</p>
+                        <input type="file" id="image-upload" multiple accept="image/*" style="display: none;">
+                    </div>
+                    <div class="upload-preview" id="image-preview"></div>
+                </div>
+                <div class="form-group full-width">
+                    <label>Vídeo do Produto (Opcional)</label>
+                    <div class="upload-area" id="video-upload-area">
+                        <i class="fas fa-video" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <p>Arraste um vídeo aqui ou clique para selecionar</p>
+                        <input type="file" id="video-upload" accept="video/*" style="display: none;">
+                    </div>
+                    <div class="upload-preview" id="video-preview"></div>
                 </div>
                 <div class="form-group full-width">
                     <button type="submit" class="btn btn-primary">
                         <i class="fas fa-save"></i> Salvar Produto
                     </button>
                     <button type="button" class="btn btn-outline" onclick="closeProductModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Vendedor -->
+    <div class="modal" id="seller-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeSellerModal()">&times;</span>
+            <h2 class="modal-title" id="seller-modal-title">Adicionar Vendedor</h2>
+            <form id="seller-form" class="admin-form">
+                <input type="hidden" id="seller-id">
+                <div class="form-group">
+                    <label for="seller-name">Nome do Vendedor</label>
+                    <input type="text" id="seller-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="seller-email">E-mail</label>
+                    <input type="email" id="seller-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="seller-phone">Telefone</label>
+                    <input type="tel" id="seller-phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="seller-commission">Comissão (%)</label>
+                    <input type="number" id="seller-commission" class="form-control" min="0" max="100" step="0.1" value="10" required>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Salvar Vendedor
+                    </button>
+                    <button type="button" class="btn btn-outline" onclick="closeSellerModal()">Cancelar</button>
                 </div>
             </form>
         </div>
@@ -1741,6 +2116,8 @@
         let products = [];
         let customers = [];
         let orders = [];
+        let sellers = [];
+        let comments = [];
         let currentUser = null;
         let cart = [];
         let aiConfig = {
@@ -1814,6 +2191,20 @@
                 orders = [];
                 ordersSnapshot.forEach(doc => {
                     orders.push({ id: doc.id, ...doc.data() });
+                });
+                
+                // Carregar vendedores
+                const sellersSnapshot = await db.collection('sellers').get();
+                sellers = [];
+                sellersSnapshot.forEach(doc => {
+                    sellers.push({ id: doc.id, ...doc.data() });
+                });
+                
+                // Carregar comentários
+                const commentsSnapshot = await db.collection('comments').get();
+                comments = [];
+                commentsSnapshot.forEach(doc => {
+                    comments.push({ id: doc.id, ...doc.data() });
                 });
                 
                 // Carregar configuração da IA
@@ -1894,6 +2285,7 @@
             // Esconder todas as seções
             document.getElementById('home-section').style.display = 'none';
             document.getElementById('produtos-section').style.display = 'none';
+            document.getElementById('product-details-section').style.display = 'none';
             document.getElementById('sobre-section').style.display = 'none';
             document.getElementById('informacoes-section').style.display = 'none';
             document.getElementById('contatos-section').style.display = 'none';
@@ -1905,6 +2297,8 @@
             } else if (section === 'produtos') {
                 document.getElementById('produtos-section').style.display = 'block';
                 initializeProducts();
+            } else if (section === 'product-details') {
+                document.getElementById('product-details-section').style.display = 'block';
             } else if (section === 'sobre') {
                 document.getElementById('sobre-section').style.display = 'block';
             } else if (section === 'informacoes') {
@@ -1988,12 +2382,23 @@
                     ? `<span class="original-price">R$ ${product.originalPrice.toFixed(2)}</span>` 
                     : '';
                 
+                // Determinar status do estoque
+                let stockBadge = '';
+                if (product.stock <= 0) {
+                    stockBadge = `<div class="stock-badge stock-low">Esgotado</div>`;
+                } else if (product.stock <= product.minStock) {
+                    stockBadge = `<div class="stock-badge stock-medium">Estoque Baixo</div>`;
+                } else {
+                    stockBadge = `<div class="stock-badge stock-high">Em Estoque</div>`;
+                }
+                
                 productCard.innerHTML = `
-                    <div class="product-image" style="${product.image ? `background-image: url(${product.image})` : ''}">
-                        ${!product.image ? `<i class="fas fa-gem"></i>` : ''}
+                    <div class="product-image" style="${product.images && product.images.length > 0 ? `background-image: url(${product.images[0]})` : ''}">
+                        ${!product.images || product.images.length === 0 ? `<i class="fas fa-gem"></i>` : ''}
                         <div class="product-badges">
                             ${discountBadge}
                             ${newBadge}
+                            ${stockBadge}
                         </div>
                     </div>
                     <div class="product-info">
@@ -2003,17 +2408,20 @@
                             <span class="current-price">R$ ${product.price.toFixed(2)}</span>
                             ${originalPrice}
                         </div>
+                        <div class="stock-info">
+                            <span>Estoque: ${product.stock}</span>
+                        </div>
                         <div class="quantity-selector">
                             <button class="quantity-btn" onclick="decreaseQuantity('${product.id}')">-</button>
-                            <input type="number" class="quantity-input" id="quantity-${product.id}" value="1" min="1">
+                            <input type="number" class="quantity-input" id="quantity-${product.id}" value="1" min="1" max="${product.stock}">
                             <button class="quantity-btn" onclick="increaseQuantity('${product.id}')">+</button>
                         </div>
                         <div class="product-actions">
-                            <button class="btn btn-outline add-to-cart" data-id="${product.id}">
-                                <i class="fas fa-shopping-cart"></i> Carrinho
+                            <button class="btn btn-outline add-to-cart" data-id="${product.id}" ${product.stock <= 0 ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-cart"></i> ${product.stock <= 0 ? 'Esgotado' : 'Carrinho'}
                             </button>
-                            <button class="btn btn-primary ask-about" data-id="${product.id}">
-                                <i class="fas fa-question-circle"></i> Dúvidas
+                            <button class="btn btn-primary view-details" data-id="${product.id}">
+                                <i class="fas fa-info-circle"></i> Detalhes
                             </button>
                         </div>
                     </div>
@@ -2031,15 +2439,315 @@
                 });
             });
             
-            document.querySelectorAll('.ask-about').forEach(button => {
+            document.querySelectorAll('.view-details').forEach(button => {
                 button.addEventListener('click', function() {
                     const productId = this.getAttribute('data-id');
-                    askAboutProduct(productId);
+                    showProductDetails(productId);
                 });
             });
             
             // Atualizar lista de produtos no admin
             updateAdminProductList();
+        }
+
+        function showProductDetails(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            const detailsContent = document.getElementById('product-details-content');
+            
+            // Determinar status do estoque
+            let stockBadge = '';
+            if (product.stock <= 0) {
+                stockBadge = `<div class="stock-badge stock-low">Esgotado</div>`;
+            } else if (product.stock <= product.minStock) {
+                stockBadge = `<div class="stock-badge stock-medium">Estoque Baixo</div>`;
+            } else {
+                stockBadge = `<div class="stock-badge stock-high">Em Estoque</div>`;
+            }
+            
+            // Galeria de imagens
+            let galleryHTML = '';
+            if (product.images && product.images.length > 0) {
+                galleryHTML = `
+                    <div class="product-gallery">
+                        <div class="product-main-image">
+                            <img src="${product.images[0]}" alt="${product.name}" id="main-product-image">
+                        </div>
+                        <div class="product-thumbnails">
+                            ${product.images.map((image, index) => `
+                                <div class="product-thumbnail ${index === 0 ? 'active' : ''}" onclick="changeProductImage('${image}')">
+                                    <img src="${image}" alt="${product.name}">
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Vídeo do produto
+            let videoHTML = '';
+            if (product.video) {
+                videoHTML = `
+                    <div style="margin-top: 2rem;">
+                        <h3>Vídeo do Produto</h3>
+                        <video controls style="width: 100%; max-width: 500px; border-radius: var(--border-radius);">
+                            <source src="${product.video}" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                    </div>
+                `;
+            }
+            
+            // Comentários do produto
+            const productComments = comments.filter(c => c.productId === productId);
+            let commentsHTML = '';
+            
+            if (productComments.length > 0) {
+                commentsHTML = `
+                    <div class="comments-section">
+                        <h3>Avaliações dos Clientes</h3>
+                        ${productComments.map(comment => `
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <span class="comment-author">${comment.customerName}</span>
+                                    <span class="comment-date">${new Date(comment.createdAt).toLocaleDateString('pt-BR')}</span>
+                                </div>
+                                <div class="comment-rating">
+                                    ${'★'.repeat(comment.rating)}${'☆'.repeat(5 - comment.rating)}
+                                </div>
+                                <p>${comment.text}</p>
+                                ${comment.images && comment.images.length > 0 ? `
+                                    <div class="comment-images">
+                                        ${comment.images.map(img => `<img src="${img}" class="comment-image" alt="Avaliação">`).join('')}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+            
+            // Formulário de comentário (apenas para clientes logados que compraram o produto)
+            let commentFormHTML = '';
+            if (currentUser && hasUserPurchasedProduct(currentUser.id, productId)) {
+                commentFormHTML = `
+                    <div class="comment-form">
+                        <h3>Deixe sua avaliação</h3>
+                        <form id="comment-form">
+                            <div class="form-group">
+                                <label>Avaliação (1-5 estrelas)</label>
+                                <div>
+                                    ${[1,2,3,4,5].map(i => `
+                                        <span class="star" onclick="setRating(${i})" id="star-${i}">☆</span>
+                                    `).join('')}
+                                </div>
+                                <input type="hidden" id="comment-rating" value="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-text">Comentário</label>
+                                <textarea id="comment-text" class="form-control" rows="3" placeholder="Conte sua experiência com o produto"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Fotos (opcional)</label>
+                                <div class="upload-area" id="comment-image-upload-area">
+                                    <i class="fas fa-cloud-upload-alt" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                                    <p>Adicione fotos do produto</p>
+                                    <input type="file" id="comment-image-upload" multiple accept="image/*" style="display: none;">
+                                </div>
+                                <div class="upload-preview" id="comment-image-preview"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+                        </form>
+                    </div>
+                `;
+            }
+            
+            detailsContent.innerHTML = `
+                <button class="btn btn-outline" onclick="showSection('produtos')" style="margin-bottom: 2rem;">
+                    <i class="fas fa-arrow-left"></i> Voltar para Produtos
+                </button>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <div>
+                        ${galleryHTML}
+                        ${videoHTML}
+                    </div>
+                    <div>
+                        <h2>${product.name}</h2>
+                        ${stockBadge}
+                        <p>${product.description}</p>
+                        
+                        <div class="product-price" style="margin: 2rem 0;">
+                            <span class="current-price">R$ ${product.price.toFixed(2)}</span>
+                            ${product.originalPrice > product.price ? `<span class="original-price">R$ ${product.originalPrice.toFixed(2)}</span>` : ''}
+                        </div>
+                        
+                        <div class="stock-info">
+                            <span>Estoque disponível: ${product.stock} unidades</span>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" onclick="decreaseDetailsQuantity('${product.id}')">-</button>
+                            <input type="number" class="quantity-input" id="details-quantity-${product.id}" value="1" min="1" max="${product.stock}">
+                            <button class="quantity-btn" onclick="increaseDetailsQuantity('${product.id}')">+</button>
+                        </div>
+                        
+                        <div class="product-actions" style="margin-top: 2rem;">
+                            <button class="btn btn-primary" onclick="addToCart('${product.id}', parseInt(document.getElementById('details-quantity-${product.id}').value))" ${product.stock <= 0 ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-cart"></i> ${product.stock <= 0 ? 'Esgotado' : 'Adicionar ao Carrinho'}
+                            </button>
+                            <button class="btn btn-outline" onclick="askAboutProduct('${product.id}')">
+                                <i class="fas fa-question-circle"></i> Dúvidas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                ${commentsHTML}
+                ${commentFormHTML}
+            `;
+            
+            // Configurar eventos do formulário de comentário
+            if (currentUser && hasUserPurchasedProduct(currentUser.id, productId)) {
+                document.getElementById('comment-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    submitComment(productId);
+                });
+                
+                // Configurar upload de imagens para comentário
+                setupCommentImageUpload();
+            }
+            
+            showSection('product-details');
+        }
+
+        function changeProductImage(imageUrl) {
+            document.getElementById('main-product-image').src = imageUrl;
+            
+            // Atualizar thumbnails ativos
+            document.querySelectorAll('.product-thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            event.target.closest('.product-thumbnail').classList.add('active');
+        }
+
+        function hasUserPurchasedProduct(userId, productId) {
+            return orders.some(order => 
+                order.customerId === userId && 
+                order.items.some(item => item.productId === productId)
+            );
+        }
+
+        function setRating(rating) {
+            document.getElementById('comment-rating').value = rating;
+            
+            // Atualizar visualização das estrelas
+            for (let i = 1; i <= 5; i++) {
+                const star = document.getElementById(`star-${i}`);
+                if (i <= rating) {
+                    star.textContent = '★';
+                } else {
+                    star.textContent = '☆';
+                }
+            }
+        }
+
+        function submitComment(productId) {
+            const rating = parseInt(document.getElementById('comment-rating').value);
+            const text = document.getElementById('comment-text').value;
+            
+            if (rating === 0) {
+                showNotification('Por favor, selecione uma avaliação.', 'warning');
+                return;
+            }
+            
+            if (!text.trim()) {
+                showNotification('Por favor, escreva um comentário.', 'warning');
+                return;
+            }
+            
+            const commentId = 'COMMENT' + Date.now();
+            const commentData = {
+                id: commentId,
+                productId: productId,
+                customerId: currentUser.id,
+                customerName: currentUser.name,
+                rating: rating,
+                text: text,
+                images: [], // Será preenchido após upload
+                createdAt: new Date().toISOString()
+            };
+            
+            // Fazer upload das imagens primeiro
+            uploadCommentImages(commentId)
+                .then(imageUrls => {
+                    commentData.images = imageUrls;
+                    
+                    // Salvar comentário no Firebase
+                    return db.collection('comments').doc(commentId).set(commentData);
+                })
+                .then(() => {
+                    comments.push(commentData);
+                    showNotification('Avaliação enviada com sucesso!', 'success');
+                    showProductDetails(productId); // Recarregar a página de detalhes
+                })
+                .catch(error => {
+                    console.error('Erro ao enviar avaliação:', error);
+                    showNotification('Erro ao enviar avaliação.', 'error');
+                });
+        }
+
+        function setupCommentImageUpload() {
+            const uploadArea = document.getElementById('comment-image-upload-area');
+            const fileInput = document.getElementById('comment-image-upload');
+            const preview = document.getElementById('comment-image-preview');
+            
+            uploadArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                const files = Array.from(this.files);
+                
+                files.forEach(file => {
+                    if (!file.type.startsWith('image/')) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const previewItem = document.createElement('div');
+                        previewItem.className = 'upload-item';
+                        previewItem.innerHTML = `
+                            <img src="${e.target.result}" alt="Preview">
+                            <div class="upload-remove" onclick="this.parentElement.remove()">×</div>
+                        `;
+                        preview.appendChild(previewItem);
+                    };
+                    reader.readAsDataURL(file);
+                });
+                
+                // Resetar o input para permitir selecionar os mesmos arquivos novamente
+                this.value = '';
+            });
+        }
+
+        async function uploadCommentImages(commentId) {
+            const previewItems = document.getElementById('comment-image-preview').children;
+            const imageUrls = [];
+            
+            for (let item of previewItems) {
+                const img = item.querySelector('img');
+                const blob = await fetch(img.src).then(r => r.blob());
+                
+                // Fazer upload para Firebase Storage
+                const storageRef = storage.ref(`comments/${commentId}/${Date.now()}-${Math.random().toString(36).substring(2)}`);
+                const snapshot = await storageRef.put(blob);
+                const downloadURL = await snapshot.ref.getDownloadURL();
+                
+                imageUrls.push(downloadURL);
+            }
+            
+            return imageUrls;
         }
 
         function filterProductsByCategory(categoryId) {
@@ -2079,12 +2787,23 @@
                     ? `<span class="original-price">R$ ${product.originalPrice.toFixed(2)}</span>` 
                     : '';
                 
+                // Determinar status do estoque
+                let stockBadge = '';
+                if (product.stock <= 0) {
+                    stockBadge = `<div class="stock-badge stock-low">Esgotado</div>`;
+                } else if (product.stock <= product.minStock) {
+                    stockBadge = `<div class="stock-badge stock-medium">Estoque Baixo</div>`;
+                } else {
+                    stockBadge = `<div class="stock-badge stock-high">Em Estoque</div>`;
+                }
+                
                 productCard.innerHTML = `
-                    <div class="product-image" style="${product.image ? `background-image: url(${product.image})` : ''}">
-                        ${!product.image ? `<i class="fas fa-gem"></i>` : ''}
+                    <div class="product-image" style="${product.images && product.images.length > 0 ? `background-image: url(${product.images[0]})` : ''}">
+                        ${!product.images || product.images.length === 0 ? `<i class="fas fa-gem"></i>` : ''}
                         <div class="product-badges">
                             ${discountBadge}
                             ${newBadge}
+                            ${stockBadge}
                         </div>
                     </div>
                     <div class="product-info">
@@ -2094,17 +2813,20 @@
                             <span class="current-price">R$ ${product.price.toFixed(2)}</span>
                             ${originalPrice}
                         </div>
+                        <div class="stock-info">
+                            <span>Estoque: ${product.stock}</span>
+                        </div>
                         <div class="quantity-selector">
                             <button class="quantity-btn" onclick="decreaseQuantity('${product.id}')">-</button>
-                            <input type="number" class="quantity-input" id="quantity-${product.id}" value="1" min="1">
+                            <input type="number" class="quantity-input" id="quantity-${product.id}" value="1" min="1" max="${product.stock}">
                             <button class="quantity-btn" onclick="increaseQuantity('${product.id}')">+</button>
                         </div>
                         <div class="product-actions">
-                            <button class="btn btn-outline add-to-cart" data-id="${product.id}">
-                                <i class="fas fa-shopping-cart"></i> Carrinho
+                            <button class="btn btn-outline add-to-cart" data-id="${product.id}" ${product.stock <= 0 ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-cart"></i> ${product.stock <= 0 ? 'Esgotado' : 'Carrinho'}
                             </button>
-                            <button class="btn btn-primary ask-about" data-id="${product.id}">
-                                <i class="fas fa-question-circle"></i> Dúvidas
+                            <button class="btn btn-primary view-details" data-id="${product.id}">
+                                <i class="fas fa-info-circle"></i> Detalhes
                             </button>
                         </div>
                     </div>
@@ -2122,21 +2844,39 @@
                 });
             });
             
-            document.querySelectorAll('.ask-about').forEach(button => {
+            document.querySelectorAll('.view-details').forEach(button => {
                 button.addEventListener('click', function() {
                     const productId = this.getAttribute('data-id');
-                    askAboutProduct(productId);
+                    showProductDetails(productId);
                 });
             });
         }
 
         function increaseQuantity(productId) {
             const input = document.getElementById(`quantity-${productId}`);
-            input.value = parseInt(input.value) + 1;
+            const product = products.find(p => p.id === productId);
+            if (parseInt(input.value) < product.stock) {
+                input.value = parseInt(input.value) + 1;
+            }
         }
 
         function decreaseQuantity(productId) {
             const input = document.getElementById(`quantity-${productId}`);
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+
+        function increaseDetailsQuantity(productId) {
+            const input = document.getElementById(`details-quantity-${productId}`);
+            const product = products.find(p => p.id === productId);
+            if (parseInt(input.value) < product.stock) {
+                input.value = parseInt(input.value) + 1;
+            }
+        }
+
+        function decreaseDetailsQuantity(productId) {
+            const input = document.getElementById(`details-quantity-${productId}`);
             if (parseInt(input.value) > 1) {
                 input.value = parseInt(input.value) - 1;
             }
@@ -2154,9 +2894,18 @@
             const product = products.find(p => p.id === productId);
             if (!product) return;
             
+            if (product.stock < quantity) {
+                showNotification(`Quantidade indisponível. Estoque atual: ${product.stock}`, 'warning');
+                return;
+            }
+            
             const existingItem = cart.find(item => item.productId === productId);
             
             if (existingItem) {
+                if (product.stock < existingItem.quantity + quantity) {
+                    showNotification(`Quantidade indisponível. Estoque atual: ${product.stock}`, 'warning');
+                    return;
+                }
                 existingItem.quantity += quantity;
             } else {
                 cart.push({
@@ -2213,8 +2962,8 @@
                 const cartItem = document.createElement('div');
                 cartItem.className = 'cart-item';
                 cartItem.innerHTML = `
-                    <div class="cart-item-image" style="${product.image ? `background-image: url(${product.image})` : ''}">
-                        ${!product.image ? `<i class="fas fa-gem"></i>` : ''}
+                    <div class="cart-item-image" style="${product.images && product.images.length > 0 ? `background-image: url(${product.images[0]})` : ''}">
+                        ${!product.images || product.images.length === 0 ? `<i class="fas fa-gem"></i>` : ''}
                     </div>
                     <div class="cart-item-details">
                         <div class="cart-item-title">${product.name}</div>
@@ -2239,11 +2988,15 @@
 
         function increaseCartQuantity(productId) {
             const item = cart.find(item => item.productId === productId);
-            if (item) {
+            const product = products.find(p => p.id === productId);
+            
+            if (item && product.stock > item.quantity) {
                 item.quantity += 1;
                 updateCartDisplay();
                 updateCartCount();
                 saveCart();
+            } else {
+                showNotification('Quantidade indisponível em estoque.', 'warning');
             }
         }
 
@@ -2292,6 +3045,15 @@
                 return;
             }
             
+            // Verificar estoque antes de finalizar
+            for (const item of cart) {
+                const product = products.find(p => p.id === item.productId);
+                if (product.stock < item.quantity) {
+                    showNotification(`Produto "${product.name}" não tem estoque suficiente. Estoque atual: ${product.stock}`, 'error');
+                    return;
+                }
+            }
+            
             // Criar pedido
             const orderId = 'ORD' + Date.now();
             const orderItems = cart.map(item => {
@@ -2318,10 +3080,16 @@
                 createdAt: new Date().toISOString()
             };
             
+            // Atualizar estoque
+            updateStockAfterOrder(orderItems);
+            
             // Salvar pedido no Firebase
             db.collection('orders').doc(orderId).set(order)
                 .then(() => {
                     orders.push(order);
+                    
+                    // Atualizar dados do cliente
+                    updateCustomerAfterOrder(currentUser.id, total);
                     
                     // Gerar mensagem para WhatsApp
                     let message = `*NOVO PEDIDO - Paina Nativa*%0A%0A`;
@@ -2356,6 +3124,41 @@
                     console.error('Erro ao salvar pedido:', error);
                     showNotification('Erro ao realizar pedido. Tente novamente.', 'error');
                 });
+        }
+
+        function updateStockAfterOrder(orderItems) {
+            orderItems.forEach(item => {
+                const product = products.find(p => p.id === item.productId);
+                if (product) {
+                    const newStock = product.stock - item.quantity;
+                    
+                    // Atualizar no Firebase
+                    db.collection('products').doc(product.id).update({
+                        stock: newStock
+                    });
+                    
+                    // Atualizar localmente
+                    product.stock = newStock;
+                }
+            });
+        }
+
+        function updateCustomerAfterOrder(customerId, total) {
+            const customer = customers.find(c => c.id === customerId);
+            if (customer) {
+                const newTotalSpent = (customer.totalSpent || 0) + total;
+                const newOrdersCount = (customer.ordersCount || 0) + 1;
+                
+                // Atualizar no Firebase
+                db.collection('customers').doc(customerId).update({
+                    totalSpent: newTotalSpent,
+                    ordersCount: newOrdersCount
+                });
+                
+                // Atualizar localmente
+                customer.totalSpent = newTotalSpent;
+                customer.ordersCount = newOrdersCount;
+            }
         }
 
         function askAboutProduct(productId) {
@@ -2502,6 +3305,11 @@
                 saveProduct();
             });
             
+            document.getElementById('seller-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                saveSeller();
+            });
+            
             document.getElementById('ai-config-form').addEventListener('submit', (e) => {
                 e.preventDefault();
                 saveAIConfig();
@@ -2527,11 +3335,88 @@
                 }
             });
             
+            // Upload de imagens para produtos
+            setupProductImageUpload();
+            setupProductVideoUpload();
+            
             // Fechar modais ao clicar fora
             window.addEventListener('click', (e) => {
                 if (e.target.classList.contains('modal')) {
                     e.target.style.display = 'none';
                 }
+            });
+        }
+
+        function setupProductImageUpload() {
+            const uploadArea = document.getElementById('image-upload-area');
+            const fileInput = document.getElementById('image-upload');
+            const preview = document.getElementById('image-preview');
+            
+            uploadArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                const files = Array.from(this.files);
+                
+                // Limitar a 5 imagens
+                const currentCount = preview.children.length;
+                if (currentCount + files.length > 5) {
+                    showNotification('Máximo de 5 imagens permitidas.', 'warning');
+                    files.splice(5 - currentCount);
+                }
+                
+                files.forEach(file => {
+                    if (!file.type.startsWith('image/')) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const previewItem = document.createElement('div');
+                        previewItem.className = 'upload-item';
+                        previewItem.innerHTML = `
+                            <img src="${e.target.result}" alt="Preview">
+                            <div class="upload-remove" onclick="this.parentElement.remove()">×</div>
+                        `;
+                        preview.appendChild(previewItem);
+                    };
+                    reader.readAsDataURL(file);
+                });
+                
+                // Resetar o input para permitir selecionar os mesmos arquivos novamente
+                this.value = '';
+            });
+        }
+
+        function setupProductVideoUpload() {
+            const uploadArea = document.getElementById('video-upload-area');
+            const fileInput = document.getElementById('video-upload');
+            const preview = document.getElementById('video-preview');
+            
+            uploadArea.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            fileInput.addEventListener('change', function() {
+                const file = this.files[0];
+                if (!file || !file.type.startsWith('video/')) return;
+                
+                // Limpar preview anterior
+                preview.innerHTML = '';
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'upload-item';
+                    previewItem.innerHTML = `
+                        <video src="${e.target.result}" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                        <div class="upload-remove" onclick="this.parentElement.remove()">×</div>
+                    `;
+                    preview.appendChild(previewItem);
+                };
+                reader.readAsDataURL(file);
+                
+                // Resetar o input para permitir selecionar o mesmo arquivo novamente
+                this.value = '';
             });
         }
 
@@ -2637,6 +3522,10 @@
             const title = document.getElementById('product-modal-title');
             const form = document.getElementById('product-form');
             
+            // Limpar previews
+            document.getElementById('image-preview').innerHTML = '';
+            document.getElementById('video-preview').innerHTML = '';
+            
             if (productId) {
                 // Editar produto existente
                 title.textContent = 'Editar Produto';
@@ -2648,7 +3537,32 @@
                 document.getElementById('product-category').value = product.category;
                 document.getElementById('product-price').value = product.price;
                 document.getElementById('product-discount').value = product.discount || 0;
-                document.getElementById('product-image').value = product.image || '';
+                document.getElementById('product-stock').value = product.stock || 0;
+                document.getElementById('product-min-stock').value = product.minStock || 5;
+                
+                // Carregar imagens existentes
+                if (product.images && product.images.length > 0) {
+                    product.images.forEach(image => {
+                        const previewItem = document.createElement('div');
+                        previewItem.className = 'upload-item';
+                        previewItem.innerHTML = `
+                            <img src="${image}" alt="Preview">
+                            <div class="upload-remove" onclick="this.parentElement.remove()">×</div>
+                        `;
+                        document.getElementById('image-preview').appendChild(previewItem);
+                    });
+                }
+                
+                // Carregar vídeo existente
+                if (product.video) {
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'upload-item';
+                    previewItem.innerHTML = `
+                        <video src="${product.video}" controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+                        <div class="upload-remove" onclick="this.parentElement.remove()">×</div>
+                    `;
+                    document.getElementById('video-preview').appendChild(previewItem);
+                }
             } else {
                 // Novo produto
                 title.textContent = 'Adicionar Produto';
@@ -2663,19 +3577,26 @@
             document.getElementById('product-modal').style.display = 'none';
         }
 
-        function saveProduct() {
+        async function saveProduct() {
             const productId = document.getElementById('product-id').value;
             const name = document.getElementById('product-name').value;
             const description = document.getElementById('product-description').value;
             const category = document.getElementById('product-category').value;
             const price = parseFloat(document.getElementById('product-price').value);
             const discount = parseInt(document.getElementById('product-discount').value) || 0;
-            const image = document.getElementById('product-image').value;
+            const stock = parseInt(document.getElementById('product-stock').value) || 0;
+            const minStock = parseInt(document.getElementById('product-min-stock').value) || 5;
             
             let originalPrice = price;
             if (discount > 0) {
                 originalPrice = price / (1 - discount / 100);
             }
+            
+            // Fazer upload das imagens
+            const imageUrls = await uploadProductImages(productId);
+            
+            // Fazer upload do vídeo
+            const videoUrl = await uploadProductVideo(productId);
             
             const productData = {
                 name,
@@ -2684,7 +3605,10 @@
                 price,
                 originalPrice,
                 discount,
-                image,
+                stock,
+                minStock,
+                images: imageUrls,
+                video: videoUrl,
                 updatedAt: new Date().toISOString()
             };
             
@@ -2723,6 +3647,51 @@
             }
         }
 
+        async function uploadProductImages(productId) {
+            const previewItems = document.getElementById('image-preview').children;
+            const imageUrls = [];
+            
+            for (let item of previewItems) {
+                const img = item.querySelector('img');
+                
+                // Se já é uma URL (imagem existente), apenas adicionar à lista
+                if (img.src.startsWith('http')) {
+                    imageUrls.push(img.src);
+                    continue;
+                }
+                
+                // Fazer upload para Firebase Storage
+                const blob = await fetch(img.src).then(r => r.blob());
+                const storageRef = storage.ref(`products/${productId || 'new'}/images/${Date.now()}-${Math.random().toString(36).substring(2)}`);
+                const snapshot = await storageRef.put(blob);
+                const downloadURL = await snapshot.ref.getDownloadURL();
+                
+                imageUrls.push(downloadURL);
+            }
+            
+            return imageUrls;
+        }
+
+        async function uploadProductVideo(productId) {
+            const previewItems = document.getElementById('video-preview').children;
+            if (previewItems.length === 0) return null;
+            
+            const video = previewItems[0].querySelector('video');
+            
+            // Se já é uma URL (vídeo existente), apenas retornar
+            if (video.src.startsWith('http')) {
+                return video.src;
+            }
+            
+            // Fazer upload para Firebase Storage
+            const blob = await fetch(video.src).then(r => r.blob());
+            const storageRef = storage.ref(`products/${productId || 'new'}/video/${Date.now()}-${Math.random().toString(36).substring(2)}`);
+            const snapshot = await storageRef.put(blob);
+            const downloadURL = await snapshot.ref.getDownloadURL();
+            
+            return downloadURL;
+        }
+
         function deleteProduct(productId) {
             if (confirm('Tem certeza que deseja excluir este produto?')) {
                 db.collection('products').doc(productId).delete()
@@ -2750,12 +3719,25 @@
             products.forEach(product => {
                 const productItem = document.createElement('div');
                 productItem.className = 'product-item';
+                
+                // Determinar status do estoque
+                let stockStatus = '';
+                if (product.stock <= 0) {
+                    stockStatus = '<span style="color: var(--danger);">Esgotado</span>';
+                } else if (product.stock <= product.minStock) {
+                    stockStatus = `<span style="color: var(--warning);">Baixo (${product.stock})</span>`;
+                } else {
+                    stockStatus = `<span style="color: var(--success);">OK (${product.stock})</span>`;
+                }
+                
                 productItem.innerHTML = `
                     <div>
                         <strong>${product.name}</strong> - R$ ${product.price.toFixed(2)}
                         ${product.discount > 0 ? ` (${product.discount}% off)` : ''}
                         <br>
                         <small>Categoria: ${categories.find(c => c.id === product.category)?.name || 'Outros'}</small>
+                        <br>
+                        <small>Estoque: ${stockStatus} | Mínimo: ${product.minStock}</small>
                     </div>
                     <div class="product-item-actions">
                         <button class="btn btn-outline" onclick="openProductModal('${product.id}')">
@@ -2768,6 +3750,120 @@
                 `;
                 
                 productList.appendChild(productItem);
+            });
+        }
+
+        function openSellerModal(sellerId = null) {
+            const modal = document.getElementById('seller-modal');
+            const title = document.getElementById('seller-modal-title');
+            const form = document.getElementById('seller-form');
+            
+            if (sellerId) {
+                // Editar vendedor existente
+                title.textContent = 'Editar Vendedor';
+                const seller = sellers.find(s => s.id === sellerId);
+                
+                document.getElementById('seller-id').value = seller.id;
+                document.getElementById('seller-name').value = seller.name;
+                document.getElementById('seller-email').value = seller.email;
+                document.getElementById('seller-phone').value = seller.phone;
+                document.getElementById('seller-commission').value = seller.commission || 10;
+            } else {
+                // Novo vendedor
+                title.textContent = 'Adicionar Vendedor';
+                form.reset();
+                document.getElementById('seller-id').value = '';
+            }
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeSellerModal() {
+            document.getElementById('seller-modal').style.display = 'none';
+        }
+
+        function saveSeller() {
+            const sellerId = document.getElementById('seller-id').value;
+            const name = document.getElementById('seller-name').value;
+            const email = document.getElementById('seller-email').value;
+            const phone = document.getElementById('seller-phone').value;
+            const commission = parseFloat(document.getElementById('seller-commission').value);
+            
+            const sellerData = {
+                name,
+                email,
+                phone,
+                commission,
+                totalSales: 0,
+                updatedAt: new Date().toISOString()
+            };
+            
+            if (sellerId) {
+                // Atualizar vendedor existente
+                db.collection('sellers').doc(sellerId).update(sellerData)
+                    .then(() => {
+                        const index = sellers.findIndex(s => s.id === sellerId);
+                        if (index !== -1) {
+                            sellers[index] = { ...sellers[index], ...sellerData };
+                        }
+                        updateAdminSellerList();
+                        closeSellerModal();
+                        showNotification('Vendedor atualizado com sucesso!', 'success');
+                    })
+                    .catch(error => {
+                        console.error('Erro ao atualizar vendedor:', error);
+                        showNotification('Erro ao atualizar vendedor.', 'error');
+                    });
+            } else {
+                // Adicionar novo vendedor
+                sellerData.createdAt = new Date().toISOString();
+                sellerData.totalSales = 0;
+                
+                db.collection('sellers').add(sellerData)
+                    .then((docRef) => {
+                        sellers.push({ id: docRef.id, ...sellerData });
+                        updateAdminSellerList();
+                        closeSellerModal();
+                        showNotification('Vendedor adicionado com sucesso!', 'success');
+                    })
+                    .catch(error => {
+                        console.error('Erro ao adicionar vendedor:', error);
+                        showNotification('Erro ao adicionar vendedor.', 'error');
+                    });
+            }
+        }
+
+        function updateAdminSellerList() {
+            const sellerList = document.getElementById('admin-seller-list');
+            sellerList.innerHTML = '';
+            
+            if (sellers.length === 0) {
+                sellerList.innerHTML = '<p>Nenhum vendedor cadastrado.</p>';
+                return;
+            }
+            
+            sellers.forEach(seller => {
+                const sellerItem = document.createElement('div');
+                sellerItem.className = 'seller-card';
+                sellerItem.innerHTML = `
+                    <div class="seller-avatar">
+                        ${seller.name.split(' ').map(n => n[0]).join('').toUpperCase()}
+                    </div>
+                    <div class="seller-info">
+                        <div class="seller-name">${seller.name}</div>
+                        <div class="seller-stats">
+                            <span>Comissão: ${seller.commission}%</span>
+                            <span>Vendas: R$ ${(seller.totalSales || 0).toFixed(2)}</span>
+                        </div>
+                    </div>
+                    <div class="seller-item-actions">
+                        <button class="btn btn-outline" onclick="openSellerModal('${seller.id}')">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                `;
+                
+                sellerList.appendChild(sellerItem);
             });
         }
 
@@ -2885,6 +3981,8 @@
             updateAdminProductList();
             updateAdminCustomerList();
             updateAdminOrderList();
+            updateAdminSellerList();
+            updateReports();
         }
 
         function viewOrderDetails(orderId) {
@@ -2921,6 +4019,88 @@
                         showNotification('Erro ao atualizar status do pedido.', 'error');
                     });
             }
+        }
+
+        function updateReports() {
+            // Vendas do mês
+            const currentMonth = new Date().getMonth();
+            const currentYear = new Date().getFullYear();
+            const monthlySales = orders
+                .filter(order => {
+                    const orderDate = new Date(order.createdAt);
+                    return orderDate.getMonth() === currentMonth && orderDate.getFullYear() === currentYear;
+                })
+                .reduce((total, order) => total + order.total, 0);
+            
+            document.getElementById('monthly-sales').textContent = `R$ ${monthlySales.toFixed(2)}`;
+            
+            // Produtos mais vendidos
+            const productSales = {};
+            orders.forEach(order => {
+                order.items.forEach(item => {
+                    if (!productSales[item.productId]) {
+                        productSales[item.productId] = {
+                            name: item.productName,
+                            quantity: 0,
+                            revenue: 0
+                        };
+                    }
+                    productSales[item.productId].quantity += item.quantity;
+                    productSales[item.productId].revenue += item.price * item.quantity;
+                });
+            });
+            
+            const topProducts = Object.values(productSales)
+                .sort((a, b) => b.quantity - a.quantity)
+                .slice(0, 5);
+            
+            const topProductsContainer = document.getElementById('top-products');
+            topProductsContainer.innerHTML = '';
+            
+            topProducts.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.style.padding = '0.5rem 0';
+                productElement.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+                productElement.innerHTML = `
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>${product.name}</span>
+                        <span>${product.quantity} vendas</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">
+                        R$ ${product.revenue.toFixed(2)}
+                    </div>
+                `;
+                topProductsContainer.appendChild(productElement);
+            });
+            
+            // Estoque baixo
+            const lowStockProducts = products.filter(p => p.stock <= p.minStock);
+            const lowStockContainer = document.getElementById('low-stock');
+            lowStockContainer.innerHTML = '';
+            
+            lowStockProducts.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.style.padding = '0.5rem 0';
+                productElement.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+                productElement.innerHTML = `
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>${product.name}</span>
+                        <span style="color: ${product.stock === 0 ? 'var(--danger)' : 'var(--warning)'};">${product.stock}</span>
+                    </div>
+                `;
+                lowStockContainer.appendChild(productElement);
+            });
+            
+            // Clientes novos (últimos 30 dias)
+            const thirtyDaysAgo = new Date();
+            thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+            
+            const newCustomersCount = customers.filter(customer => {
+                const registeredDate = new Date(customer.registeredAt);
+                return registeredDate >= thirtyDaysAgo;
+            }).length;
+            
+            document.getElementById('new-customers').textContent = newCustomersCount;
         }
 
         function sendBulkMessage() {
